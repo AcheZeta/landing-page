@@ -17,7 +17,6 @@
 
 #hero {
     background-color: var(--main-color);
-    color: white;
     height: 100vh;
     width: 100%;
 }
@@ -30,10 +29,12 @@
     padding: 20px;
 }
 
-#hero h1, p{
+#hero h1,
+p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -53,22 +54,31 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--main-white-color);
+    background-color: RGBA(255, 255, 255, 0.9);
     border-radius: 30px;
-}
-
-#card span {
-    display: flex;
-    justify-content: center;
-    color: #000000;
 }
 
 .card-info {
     padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #price {
     padding: 0;
     margin: 0;
     font-size: 70px;
+    
+}
+
+#card h2 .currency {
+    font-size: 35px;
+    margin-left: -15px;
+    opacity: 0.6;
+}
+
+#card .info-detail {
+    color: var(--main-color);
 }
