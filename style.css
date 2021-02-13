@@ -179,7 +179,7 @@ p {
 
 /* Mobile Section */
 
-.mobile {
+#mobile {
     width: 45%;
     height: 50vh;
     margin: 50px;
@@ -196,14 +196,14 @@ p {
     background-size: contain;
 }
 
-.mobile img {
+#mobile img {
     width: 550px;
     margin: 20px;
 }
 
 /* Mobile pills */
 
-.mobile .pill {
+.pill {
     width: 250px;
     padding: 2%;
     background-color: RGBA(255, 255, 255, 0.5);
@@ -231,4 +231,30 @@ p {
 
 .left {
     margin-right: auto;
+}
+
+/* Tutor */
+
+#tutor {
+    width: 100%;
+    height: 100vh;
+} 
+
+.bgline {
+    width: 100%;
+    background-color: var(--main-secondary-color);
+    border: 1px solid #000000;
+    transform: skew(0deg,-4deg)
+}
+
+.l1 {
+    height: 90px;
+}
+
+.l2 {
+    height: 350px;
+}
+
+.l3 {
+    height: 200px;
 }
