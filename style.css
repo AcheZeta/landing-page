@@ -236,6 +236,7 @@ p {
 /* Background Lines*/
 
 #bg {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -246,18 +247,19 @@ p {
 .bgline {
     width: 100%;
     background-color: var(--main-secondary-color);
-    border: 1px solid #000000;
-    transform: skew(0deg, -4deg);
+    border: .2px solid #000000;
+    border-width: thin;
+    transform: skew(0deg, -2deg);
     z-index: -10;
     position: sticky;
 }
 
 .l1 {
-    height: 90px;
+    height: 100px;
 }
 
 .l2 {
-    height: 350px;
+    height: 500px;
 }
 
 .l3 {
@@ -266,30 +268,107 @@ p {
 
 /* Tutors */
 
-#tutor {
+.tutor-section {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-#tutor-profile {
+.tutor-profile {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#tutor h2 {
-    transform: translateX(25%);
+.tutor h2 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 150px;
+    top: 150px;
 }
 
-#tutor figure {
+/*Picture & Background Uriel*/
+
+.uriel {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 150px;
+    top: 200px;
+}
+
+.bg1 {
+    position: relative;
+    width: 450px;
+    height: 340px;
+    left: 85px;
+    top: 130px;
     background: url(./assets/circles.svg);
-    width: 100%;
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
 }
 
-#uriel {
-    width: 5%;
+/*Picture & Background Eduardo*/
+
+.eduardo {
+    position: absolute;
+    width: 390px;
+    height: 280px;
+    left: 550px;
+    top: 90px;
+}
+
+.bg2 {
+    position: relative;
+    width: 50%;
+    height: 380px;
+    left: 390px;
+    top: -310px;
+    background: url(./assets/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+/*Picture & Background Eduardo*/
+
+.marines {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 900px;
+    top: 210px;
+}
+
+.bg3 {
+    position: relative;
+    width: 50%;
+    height: 337px;
+    left: 740px;
+    top: -555px;
+    background: url(./assets/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+}
+
+/* tutor-gallery */
+
+.tutor-gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -500px;
+}
+
+.gallery {
+    width: 160px;
+    padding: 20px;
 }
