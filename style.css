@@ -273,6 +273,12 @@ p {
 
 /* Tutors */
 
+.tutor-title {
+    position: absolute;
+    left: 110px;
+    top: 160px;
+}
+
 .tutor-section {
     position: relative;
     width: 100%;
