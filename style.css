@@ -57,7 +57,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: RGBA(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 30px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
 }
@@ -206,7 +206,7 @@ p {
 .pill {
     width: 250px;
     padding: 2%;
-    background-color: RGBA(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 30px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
 }
