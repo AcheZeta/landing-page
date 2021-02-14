@@ -7,12 +7,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--main-background-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-emphasis {
+    font-weight: bold;
 }
 
 /* Hero Section CSS */
@@ -132,11 +140,6 @@ p {
     font-weight: normal;
     line-height: 1.5em;
 }
-
-#details h2 span {
-    font-weight: bold;
-}
-
 
 /* Logos */
 
