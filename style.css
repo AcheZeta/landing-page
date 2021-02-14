@@ -19,8 +19,25 @@
     text-transform: uppercase;
 }
 
+.diagonal {
+    position: relative;
+}
+
 .text-emphasis {
+    z-index: 2;
     font-weight: bold;
+}
+
+.text-emphasis::after {
+    z-index: -1;
+    top: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    content: "";
+    height: 15px;
+    background-color: #ff6b6b;
+    transform: rotate(-4deg);
 }
 
 /* Hero Section CSS */
@@ -29,6 +46,10 @@
     background-color: var(--main-color);
     height: 100vh;
     width: 100%;
+    background-image: url(./assets/circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    background-size: 490px;
 }
 
 .logo {
@@ -175,7 +196,7 @@ p {
 /* Line decoration */
 .line-decoration {
     display: block;
-    margin: auto;
+    margin: 50px auto auto auto;
     transform: skew(-5deg, -10deg);
     width: 250px;
     height: 15px;
@@ -199,11 +220,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-.mobile img {
-    width: 550px;
-    margin: 20px;
 }
 
 /* Mobile pills */
@@ -324,13 +340,18 @@ p {
 }
 
 .uriel-pill {
-    position: absolute;
-    width: 250px;
     top: 430px;
+    left: 21px;
+}
+
+.tut-pill {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 30px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%), 2px 2px 6px rgb(0 0 0 / 20%);
     z-index: 3;
 }
 
@@ -358,15 +379,8 @@ p {
 }
 
 .eduardo-pill {
-    position: absolute;
-    width: 250px;
     left: 770px;
     top: 50px;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%), 2px 2px 6px rgb(0 0 0 / 20%);
-    z-index: 3;
 }
 
 /*Picture & Background Eduardo*/
@@ -393,15 +407,8 @@ p {
 }
 
 .marines-pill {
-    position: absolute;
-    width: 250px;
     left: 813px;
     top: 430px;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%), 2px 2px 6px rgb(0 0 0 / 20%);
-    z-index: 3;
 }
 
 /* tutor-gallery */
