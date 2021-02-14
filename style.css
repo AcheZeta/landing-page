@@ -381,9 +381,9 @@ p {
 
 .bg3 {
     position: relative;
-    width: 50%;
+    width: 25%;
     height: 337px;
-    left: 740px;
+    left: 840px;
     top: -555px;
     background: url(./assets/circles.svg);
     background-position: center;
