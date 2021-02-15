@@ -453,3 +453,65 @@ p {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
     z-index: 3;
 }
+
+/* Basic Mobile Media Queries */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+    /* Hero Section CSS */
+
+    .logo {
+        width: 50%;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-position: 50% 90%;
+        background-size: contain;
+    }
+
+    .hero p {
+        font-size: 100%;
+        font-weight: 300;
+    }
+
+    .hero h1 {
+        font-size: 150%;
+    }
+
+    /*Card*/
+    .card {
+        width: 70%;
+        height: 50vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+    }
+
+    .card-info {
+        height: auto;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Mobile Section */
+
+    .mobile {
+        width: 100%;
+    }
+
+    /* Mobile pills */
+
+    .pill {
+        width: 100%;
+        margin: 5%;
+    }
+
+}
