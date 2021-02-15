@@ -1,0 +1,517 @@
+:root {
+    --main-color: #FF6B6B;
+    --main-background-color: ##E5E5E5;
+    --main-secondary-color: #F5F5F5;
+    --main-white-color: #FFFFFF
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--main-background-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.diagonal {
+    position: relative;
+}
+
+.text-emphasis {
+    z-index: 2;
+    font-weight: bold;
+}
+
+.text-emphasis::after {
+    z-index: -1;
+    top: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    content: "";
+    height: 15px;
+    background-color: #ff6b6b;
+    transform: rotate(-4deg);
+}
+
+/* Hero Section CSS */
+
+.hero {
+    background-color: var(--main-color);
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    background-size: 490px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 20px;
+}
+
+.hero h1,
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+/*Card*/
+.card {
+    width: 350px;
+    height: 505px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+.card-info {
+    height: auto;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+
+}
+
+.card h2 .currency {
+    font-size: 35px;
+    margin-left: -15px;
+    opacity: 0.6;
+}
+
+.card .info-detail {
+    color: var(--main-color);
+}
+
+
+.btn {
+    width: 170px;
+    max-width: 90vw;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    border-style: none;
+    background-color: var(--main-white-color);
+    color: #000000;
+    opacity: 0.7;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+    margin: 5px;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    opacity: .9;
+}
+
+.heartbox {
+    width: 110%;
+    height: auto;
+    margin-top: -30%;
+}
+
+/* Details Section CSS */
+
+.details {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: var(--main-background-color);
+}
+
+.details h2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+/* Logos */
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.logos {
+    width: 30%;
+}
+
+.logos img {
+    width: 30%;
+}
+
+.logos figcaption {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 5%;
+}
+
+.logos p {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+/* Line decoration */
+.line-decoration {
+    display: block;
+    margin: 50px auto auto auto;
+    transform: skew(-5deg, -10deg);
+    width: 250px;
+    height: 15px;
+    background-color: var(--main-color);
+}
+
+/* Mobile Section */
+
+.mobile {
+    width: 45%;
+    height: 50vh;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-image: url(./assets/mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Mobile pills */
+
+.pill {
+    width: 250px;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+.hcaption {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.pilltext {
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.left {
+    margin-right: auto;
+}
+
+/* Background Lines*/
+
+.bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bgline {
+    width: 100%;
+    background-color: var(--main-secondary-color);
+    border: .2px solid #000000;
+    border-width: thin;
+    transform: skew(0deg, -2deg);
+    z-index: -10;
+    position: sticky;
+}
+
+.l1 {
+    height: 100px;
+}
+
+.l2 {
+    height: 500px;
+}
+
+.l3 {
+    height: 200px;
+}
+
+/* Tutors */
+
+.tutor-title {
+    position: absolute;
+    left: 110px;
+    top: 160px;
+}
+
+.tutor-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.tutor-profile {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tutor h2 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 150px;
+    top: 150px;
+}
+
+/*Picture & Background Uriel*/
+
+.uriel {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 160px;
+    top: 220px;
+}
+
+.bg1 {
+    position: relative;
+    width: 450px;
+    height: 340px;
+    left: 85px;
+    top: 130px;
+    background: url(./assets/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.uriel-pill {
+    top: 430px;
+    left: 21px;
+}
+
+.tut-pill {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%), 2px 2px 6px rgb(0 0 0 / 20%);
+    z-index: 3;
+}
+
+/*Picture & Background Eduardo*/
+
+.eduardo {
+    position: absolute;
+    width: 390px;
+    height: 280px;
+    left: 550px;
+    top: 90px;
+}
+
+.bg2 {
+    position: relative;
+    width: 50%;
+    height: 380px;
+    left: 390px;
+    top: -310px;
+    background: url(./assets/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.eduardo-pill {
+    left: 770px;
+    top: 50px;
+}
+
+/*Picture & Background Eduardo*/
+
+.marines {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 900px;
+    top: 210px;
+}
+
+.bg3 {
+    position: relative;
+    width: 25%;
+    height: 337px;
+    left: 940px;
+    top: -555px;
+    background: url(./assets/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.marines-pill {
+    left: 813px;
+    top: 430px;
+}
+
+/* tutor-gallery */
+
+.tutor-gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -500px;
+}
+
+.gallery {
+    width: 160px;
+    margin: 18px 25px -20px 25px;
+}
+
+
+.tutor-caption {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.tutor-text {
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.gallery-pill {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+    z-index: 3;
+}
+
+/* Basic Mobile Media Queries */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+    /* Hero Section CSS */
+
+    .logo {
+        width: 50%;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-position: 50% 90%;
+        background-size: contain;
+    }
+
+    .hero p {
+        font-size: 100%;
+        font-weight: 300;
+    }
+
+    .hero h1 {
+        font-size: 150%;
+    }
+
+    /*Card*/
+    .card {
+        width: 70%;
+        height: 50vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.20);
+    }
+
+    .card-info {
+        height: auto;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Mobile Section */
+
+    .mobile {
+        width: 100%;
+    }
+
+    /* Mobile pills */
+
+    .pill {
+        width: 100%;
+        margin: 5%;
+    }
+
+}
